@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="restaurant who serve tasty cusine from world wide ">
+    <meta name="keywords" content="restaurant,pasta,pizza,samosa,spices,biryani">a
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website</title>
     <link rel="stylesheet" href="style.css">
-<script src="backend.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -285,13 +287,16 @@
         </div>
     </div>
     <div class="order-form">
-        <form action="#">
-            <input type="text" placeholder="Name" required>
-            <input type="number" placeholder="Phone Number" required>
-            <input type="text" placeholder="Your Order" required>
-            <textarea name="" id="" cols="35" rows="10" placeholder="Address" required></textarea>
-            <input type="submit" value="Order Now" class="submit" required>
-        </form>
+        <div class="order-form">
+            <form action="/submit-order" method="POST"> 
+                <input type="text" name="name" placeholder="Name" required>
+                <input type="text" name="phoneNumber" placeholder="Phone Number" required>
+                <input type="text" name="order" placeholder="Your Order" required>
+                <textarea name="address" cols="35" rows="10" placeholder="Address" required></textarea>
+                <input type="submit" value="Order Now" class="submit" required>
+            </form>
+        </div>
+        
     </div>
     
 </section>
