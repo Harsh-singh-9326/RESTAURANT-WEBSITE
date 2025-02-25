@@ -14,6 +14,7 @@ const dbName = 'Restaurant_website';
 MongoClient.connect(mongoURL, { useNewUrlParser: true, useUnifiedTopology: true }, (err, client) => {
     if (err) return console.error(err);
     console.log('Connected to MongoDB');
+    
 
     const db = client.db(Restaurant_website);
     const ordersCollection = db.collection('orders');
